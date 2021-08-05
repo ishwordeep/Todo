@@ -1,0 +1,8 @@
+[nz-button].ant-btn {
+    margin-right: 8px;
+    margin-bottom: 12px;
+    /* position:absolute; */
+    top:90%;
+    left:50%;
+    transform:translate(-50%,50%);
+}

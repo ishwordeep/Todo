@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "anjila",
+      "password": "anjila1"
+    },
+    {
+      "id": 2,
+      "name": "mina",
+      "password": "minu"
+    }
+  ],
+  "taskTable": [
+    {
+      "id": 1,
+      "task": "football",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "task": "cricket",
+      "completed": false
+    },
+    {
+      "task": "Ludo",
+      "id": 4,
+      "completed": true
+    },
+    {
+      "task": "Marble",
+      "id": 5,
+      "completed": false
+    },
+    {
+      "task": "New TAsk",
+      "id": 12,
+      "completed": true
+    },
+    {
+      "task": "Roaming",
+      "id": 15,
+      "completed": false
+    },
+    {
+      "task": "Dance",
+      "id": 16,
+      "completed": false
+    }
+  ]
+}

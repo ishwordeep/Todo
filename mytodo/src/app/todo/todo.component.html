@@ -1,0 +1,43 @@
+<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> -->
+
+
+<div class="completed">
+    <app-sidebar></app-sidebar>
+</div>
+<div class="todoTitle">
+
+    <h1 class="text-center ttitle">My Todo App</h1>
+</div>
+<div class="parentBox">
+
+    <!-- <app-addnewtask></app-addnewtask> -->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tasks</th>
+            <th scope="col">Action</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+         
+            <tr *ngFor="let tsk of tasklist">
+            <th scope="row">{{tsk.id}}</th>
+            <td >{{tsk.task}}</td>
+            <td><app-edittask [tid]=tsk.id></app-edittask><app-deletetask [tid]=tsk.id></app-deletetask></td>
+          </tr>
+         
+         
+         
+        </tbody>
+      </table>
+
+
+
+    <div class="testdiv"><app-modelfornewtask (successmsg)="alertmsg=$event"></app-modelfornewtask></div>
+</div>
+

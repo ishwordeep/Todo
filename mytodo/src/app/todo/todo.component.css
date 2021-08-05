@@ -1,0 +1,41 @@
+.parentBox{
+    height:400px;
+    width:500px;
+    background-color: white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-35%);
+    /* border-top-right-radius:16px; */
+    border-bottom-left-radius:16px;
+    border-bottom-right-radius:16px;
+}
+.completed{
+    background-color: red;
+    position:absolute;
+    top: 7%;
+    left: 63%;
+    transform:translate(-50%,50%);
+}
+.todoTitle{
+    height:70px;
+    width:500px;
+    background-color: white;
+    position:absolute;
+    top:15%;
+    left:31.7%;
+    /* transform: translate(-40%,-40%); */
+    border-top-right-radius:12px; 
+    border-top-left-radius:12px;
+}
+.ttitle{
+    margin-top:10px;
+}
+
+.testdiv{
+    background-color: white;
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform:translate(-50%,50%);
+}

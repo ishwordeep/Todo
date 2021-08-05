@@ -1,0 +1,20 @@
+.parentBox{
+    height:400px;
+    width:500px;
+    background-color: red;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.test{
+    height:100px;
+    width:100px;
+    background-color:pink;
+    position:absolute;
+    top:88%;
+    left:50%;
+    transform:translate(-50%,50%);
+}

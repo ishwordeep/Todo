@@ -1,0 +1,25 @@
+<button nz-button nzType="primary" (click)="open()">Completed Tasks</button>
+<nz-drawer [nzClosable]="false" [nzVisible]="visible" nzPlacement="right" nzTitle="Completed Task List" (nzOnClose)="close()">
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tasks</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+        <tr *ngFor="let tsk of tasklist">
+        <th scope="row">{{tsk.id}}</th>
+        <td>{{tsk.task}}</td>
+      </tr>
+     
+     
+     
+    </tbody>
+  </table>
+
+
+
+</nz-drawer>

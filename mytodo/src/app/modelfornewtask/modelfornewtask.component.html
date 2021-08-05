@@ -1,0 +1,16 @@
+
+    <button  class="tstbtn" nz-button [nzType]="'primary'" (click)="showModal()"><span><i nz-icon nzType="plus" nzTheme="outline"></i>Add Newu Task</span></button>
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="Enter your new task" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <form action="" [formGroup]="newTaskForm">
+        <div class="mb-3">
+            <label  class="form-label">Enter a task to be done:</label>
+            <input type="text" class="form-control" formControlName="task">
+            <input type="hidden" class="form-control" formControlName="id">
+            <input type="hidden" class="form-control" formControlName="completed">
+            <!-- <input type="hidden" class="form-control" formControlName="userId">
+            <input type="hidden" class="form-control" formControlName="completed"> -->
+            <!-- <input type="hidden" class="form-control" formControlName="id"> -->
+            
+        </div>
+    </form>
+    </nz-modal>

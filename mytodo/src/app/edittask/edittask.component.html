@@ -1,0 +1,18 @@
+
+    <!-- <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button> -->
+    <!-- <i nz-icon style="margin-left: 20px;" nzType="delete" nzTheme="outline" (click)="showModal()"></i> -->
+    <i nz-icon nzType="edit" nzTheme="outline" (click)="showModal()" ></i>
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <form action="" [formGroup]="updateTaskForm">
+        <div class="mb-3">
+            <label  class="form-label">Enter a task to be done:</label>
+            <input type="text" class="form-control" formControlName="task">
+            <!-- <input type="hidden" class="form-control" formControlName="userId" valu> -->
+            <!-- <input type="hidden" class="form-control" formControlName="userId">
+            <input type="hidden" class="form-control" formControlName="completed"> -->
+            <!-- <input type="hidden" class="form-control" formControlName="id"> -->
+            
+        </div>
+    </form>
+    </nz-modal>
+  
